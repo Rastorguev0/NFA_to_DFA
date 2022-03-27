@@ -7,11 +7,17 @@
 #include "reporter.h"
 #include "system.h"
 #include "presenter.h"
+#include "ut.h"
 
 using namespace std;
 
 int main(int argc, char* argv[])
 {
+    if (!RunUnitTesting()) {
+        cout << "Testing failed";
+        return 0;
+    }
+
     if (argc < 2) {
         cout << "Missing file name of NFA [parameter 1]. Terminating.";
     }

@@ -27,7 +27,8 @@ class DotWriter
 public:
     static void Begin(std::ostream& os);
     static void WriteTerm(std::ostream& os, const std::string& name);
-    static void SetNodesCircle(std::ostream& os);
+    static void SetNodesShape(std::ostream& os);
+    static void StartNode(std::ostream& os, const std::string& name);
     static void WriteConnection(std::ostream& os, const Connection<std::string>& con);
     static void End(std::ostream& os);
 };

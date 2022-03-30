@@ -57,6 +57,7 @@ void DotWriter::Begin(std::ostream& os)
     os << "node[fontname = \"Helvetica,Arial,sans-serif\"];\n";
     os << "edge[fontname = \"Helvetica,Arial,sans-serif\"];\n";
     os << "rankdir = LR;\n";
+    os << "node [shape = none]; \" \";\n";
 }
 
 void DotWriter::WriteTerm(std::ostream& os, const std::string& name)
@@ -66,7 +67,6 @@ void DotWriter::WriteTerm(std::ostream& os, const std::string& name)
 
 void DotWriter::SetNodesShape(std::ostream& os)
 {
-    os << "node [shape = none]; \" \";\n";
     os << "node [shape = circle];\n";
 }
 

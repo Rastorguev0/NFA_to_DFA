@@ -64,15 +64,9 @@ void DotWriter::WriteTerm(std::ostream& os, const std::string& name)
     os << "node [shape = doublecircle]; \"" << name << "\";\n";
 }
 
-void DotWriter::SetNodesShape(std::ostream& os)
+void DotWriter::SetNodesCircle(std::ostream& os)
 {
-    os << "node [shape = none]; \" \";\n";
-    os << "node [shape = circle];\n";
-}
-
-void DotWriter::StartNode(std::ostream& os, const std::string& name)
-{
-    os << "\" \" -> \"" << name << "\";\n";
+    os << "node [shape = circle]\n";
 }
 
 void DotWriter::WriteConnection(std::ostream& os, const Connection<std::string>& con)

@@ -1,0 +1,11 @@
+term 7
+term 8
+term 5
+path 1 \lambda 2
+path 2 b 3
+path 2 a 4
+path 2 \lambda 5
+path 4 c 5
+path 5 a 6
+path 5 \lambda 7
+path 7 b 8

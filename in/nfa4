@@ -1,0 +1,9 @@
+term 4
+term 5
+path 1 \lambda 1
+path 1 \lambda 2
+path 1 a 3
+path 1 b 4
+path 3 a 5
+path 4 \lambda 3
+path 5 \lambda 3
